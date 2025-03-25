@@ -152,7 +152,7 @@ const s3 = new S3Client({
   }
 });
 const s3BucketName = process.env.BUCKET_NAME;
-
+console.log(s3BucketName);
 const s3Storage = multerS3({
   s3,
   bucket: s3BucketName,
